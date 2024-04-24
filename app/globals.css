@@ -2,32 +2,76 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+{
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html,
+body{
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  padding: 0 2rem;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+main {
+  min-height: 100vh;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+input, textarea {
+  display: block;
+  max-width: 300px;
+  margin: 0.5rem 0;
+}
+
+button {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+nav a {
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+.notesContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* creates three columns */
+  gap: 16px; /* space between the notes */
+}
+
+.note {
+  background-color: #F3F4F6; /* yellow like a sticky note */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* subtle shadow */
+  cursor: pointer; /* indicates the note is clickable */
+  transition: transform 0.2s; /* smooth transform on hover */
+}
+
+.note:hover {
+  transform: scale(1.05); /* slightly enlarges the note on hover */
+  background-color: #F3F4F6;
+}
+
+.newsContainer {
+  display: grid;
 }
