@@ -1,13 +1,6 @@
 import PocketBase from 'pocketbase';
 import { Key } from 'react';
 
-export const dynamic = 'auto',
-    dynamicParams = true,
-    revalidate = 0,
-    fetchCacher = 'auto',
-    runtime = 'nodejs',
-    preferredRegion = 'auto'
-
 async function getNews(){
     const pb = new PocketBase(process.env.POCKETBASE_URL);
     try {

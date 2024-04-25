@@ -1,13 +1,6 @@
 import PocketBase from 'pocketbase';
 import Image from 'next/image'
 
-export const dynamic = 'auto',
-    dynamicParams = true,
-    revalidate = 0,
-    fetchCacher = 'auto',
-    runtime = 'nodejs',
-    preferredRegion = 'auto'
-
 async function getPeople(){
     const pb = new PocketBase(process.env.POCKETBASE_URL);
     try {

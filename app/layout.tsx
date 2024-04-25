@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from 'next/link';
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +27,7 @@ export default function RootLayout({
           <p className="text-sm py-2">Multidisciplinary approaches to understanding cellular mechanics and cell-biomaterial interactions</p>
           </div>
           <div className="flex">
-            <img className="h-24 w-auto ml-auto px-2" src="crk-logo.jpg"/>
+            <Image className="h-24 w-auto ml-auto px-2" src="/crk-logo.jpg" width={200} height={200} alt="crk logo"/>
           </div>
         </div>
       </div>

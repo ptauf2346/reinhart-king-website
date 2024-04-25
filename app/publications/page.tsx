@@ -1,13 +1,5 @@
 import PocketBase from 'pocketbase';
 
-export const dynamic = 'auto',
-    dynamicParams = true,
-    revalidate = 0,
-    fetchCacher = 'auto',
-    runtime = 'nodejs',
-    preferredRegion = 'auto'
-
-
 async function getPublications(){
     const pb = new PocketBase(process.env.POCKETBASE_URL);
     try {
