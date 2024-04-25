@@ -14,6 +14,12 @@ const nextConfig = {
                 port: '8090',
                 pathname: '/api/files/**',
             },
+            {
+                protocol: 'http',
+                hostname: 'anchorsofacademia.org',
+                port: '8090',
+                pathname: '/api/files/**',
+            },
         ],
     },
 };
