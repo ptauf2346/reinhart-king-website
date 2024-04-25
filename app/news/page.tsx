@@ -9,7 +9,7 @@ export const dynamic = 'auto',
     preferredRegion = 'auto'
 
 async function getNews(){
-    const pb = new PocketBase('http://3.145.157.159:8090');
+    const pb = new PocketBase(process.env.POCKETBASE_URL);
     try {
         const res = await pb.collection('news').getFullList({sort: '-date'});
         return res as any[];  
