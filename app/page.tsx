@@ -5,9 +5,8 @@ export default function HomePage() {
 
   return (
     <div>
-      <h1>Home Page</h1>
-      <p>Some content</p>
-      <Link href={AdminURL} className="text-blue-500">Edit Website</Link>
+      <h1 className="text-center text-2xl py-2">Home Page</h1>
+      <Link href={AdminURL} className="text-blue-100">Edit Website</Link>
     </div>
   )
 }
