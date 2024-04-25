@@ -18,22 +18,23 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       <body className="bg-gray-100">
       <main>
       <div className="bg-gray-900 text-white text-left w-full py-2">
-        <div className="grid grid-cols-2 gap-4">
-          <div className="px-6">
-          <h1 className="text-6xl">Reinhart-King Laboratory</h1>
-          <p className="text-sm py-2">Multidisciplinary approaches to understanding cellular mechanics and cell-biomaterial interactions</p>
+        <div className="grid grid-cols-2">
+          <div className="flex flex-col px-6">
+            <h1 className="text-5xl">Reinhart-King Laboratory</h1>
+            <p className="flex flex-grow items-center text-xs">Multidisciplinary approaches to understanding cellular mechanics and cell-biomaterial interactions</p>
           </div>
           <div className="flex">
-            <Image className="h-24 w-auto ml-auto px-2" src="/crk-logo.jpg" width={200} height={200} alt="crk logo"/>
+            <Image className="h-20 w-auto ml-auto px-2" src="/crk-logo.jpg" width={180} height={180} alt="crk logo"/>
           </div>
         </div>
       </div>
         <nav className="bg-gray-200 text-white w-full">
           <div className="max-w-16xl mx-auto px-2 sm:px-6 lg:px-8">
-            <div className="relative flex items-center justify-between h-16">
+            <div className="relative flex items-center justify-between h-14">
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex space-x-2">
                   <Link href="/" className="text-gray-900 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Home</Link>

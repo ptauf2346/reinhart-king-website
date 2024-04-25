@@ -44,7 +44,7 @@ function Note({ note}: any) {
 
     return (
             <div className='note'>
-                <h1 className='text-xl'><b>{monthName} {year}</b></h1>
+                <h1 className='text-lg'><b>{monthName} {year}</b></h1>
                 <ul>
                     {event_items.map((item: string, index: Key | null | undefined) => {
                         return (

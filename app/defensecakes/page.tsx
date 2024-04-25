@@ -37,7 +37,7 @@ function Cake({ cake}: any) {
             <div className='note w-3/4 mx-auto'>
                 <div className="grid grid-cols-2 gap-4">
                     <div>
-                        <Image className="mx-auto p-1" src={ImageURL} width={300} height={300} alt="cake pic"/>
+                        <Image className="mx-auto p-1" src={ImageURL} width={260} height={260} alt="cake pic"/>
                     </div>
                     <div>
                         <h2 className="text-xl text-blue-800">{student}</h2>

@@ -42,7 +42,7 @@ function Note({ note}: any) {
 
     return (
             <div className='note'>
-                <h5 className="text-3xl">{title}</h5>
+                <h5 className="text-xl text-red-900">{title}</h5>
                 <h5 className="text-justify">{description}</h5>
                 <Image className="mx-auto p-4" src={ImageURL} width={200} height={200} alt="research pic"/>
             </div>

@@ -31,9 +31,9 @@ function Publication({ publication}: any) {
 
     return (
             <div className='py-2'>
-                <h1><b>{title}</b></h1>
-                <p className="text-sm">{authors}</p>
-                <p className="text-sm"><i>{journal}</i>, {publication_year}, PMID: {pmid}</p>
+                <h1 className="text-sm"><b>{title}</b></h1>
+                <p className="text-xs">{authors}</p>
+                <p className="text-xs"><i>{journal}</i>, {publication_year}, PMID: {pmid}</p>
             </div>
     )
 }

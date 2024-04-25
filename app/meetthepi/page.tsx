@@ -49,13 +49,13 @@ export default async function MeetThePIPage(){
                     <Image src="/cindy-pi.jpg" width={300} height={300} alt="cindy photo"/>
                 </div>
                 <div className='my-auto text-left py-2 w-full'>
-                    <h1 className="text-2xl py-2"><b><u>Cynthia A. Reinhart-King, PhD</u></b></h1>
+                    <h1 className="text-xl py-2"><b><u>Cynthia A. Reinhart-King, PhD</u></b></h1>
                     <ul>
                         {titles?.map((item) => {
                             return <li key={item.id}>- {item.title}</li>
                         })}
                     </ul>
-                    <h3 className="text-xl py-2"><u>Education:</u></h3>
+                    <h3 className="text-lg py-2"><u>Education:</u></h3>
                     <ul>
                         {education?.map((item) => {
                             return <li key={item.id}>- {item.degree}</li>
