@@ -34,6 +34,24 @@ async function getCindyAbout(){
     }
 }
 
+async function getCindyAbout1() {
+    const headers = new Headers();
+    headers.append("Cache-Control", "no-cache, no-store, must-revalidate");
+
+    try {
+        const response = await fetch(`${process.env.POCKETBASE_URL}/api/collections/cindy_about/records`, {
+            method: 'GET',
+            headers: headers
+        });
+        const about = await response.json();
+        return about.items as any[];
+    } catch (error) {
+        console.error('Failed to fetch Cindy About:', error);
+        throw error;
+    }
+}
+
+
 
 export default async function MeetThePIPage(){
     const education = await getEducation();

@@ -19,6 +19,7 @@ export default function RootLayout({
   return (
     <html>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      <meta httpEquiv="Cache-Control" content="no-cache, no-store, must-revalidate"></meta>
       <body className="bg-gray-100">
       <main>
       <div className="bg-gray-900 text-white text-left w-full py-2">
@@ -57,3 +58,10 @@ export default function RootLayout({
     </html>
   );
 };
+
+export const dynamic = 'auto',
+  dynamicParams = true,
+  revalidate = 0,
+  fetchCache = 'auto',
+  runtime = 'nodejs',
+  preferredRegion = 'auto'
