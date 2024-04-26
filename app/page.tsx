@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export default function HomePage() {
-  const AdminURL = `${process.env.POCKETBASE_URL}/_/`;
+  const AdminURL = `${process.env.POCKETBASE_URL_DOMAIN}/_/`;
 
   return (
     <div className="w-full text-center">
