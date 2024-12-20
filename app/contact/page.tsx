@@ -23,10 +23,6 @@ export default async function ContactPage(){
                 <p>{contact_info.address}</p>
                 <h3 className="py-1"><u>Email</u></h3>
                 <p>{contact_info.email}</p>
-                <h3 className="py-1"><u>Phone Number</u></h3>
-                <p>{contact_info.phone}</p>
-                <h3 className="py-1"><u>Mail Address</u></h3>
-                <p>{contact_info.mail}</p>
             </div>
             <div>
                 <h1 className="text-xl text-blue-900 py-3">Prospective Applicants</h1>
