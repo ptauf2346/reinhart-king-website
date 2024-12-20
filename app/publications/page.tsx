@@ -34,10 +34,6 @@ function Publication({ publication}: any) {
                 <h1 className="text-sm"><b>{title}</b></h1>
                 <p className="text-xs">{authors}</p>
                 <p className="text-xs"><i>{journal}</i>, {publication_year}, PMID: {pmid}</p>
-                </p> {doi && (
-                    <p className="text-xs">
-                        DOI: <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">{doi}</a>
-                    </p>
-            </div>
+                {doi && (<p className="text-xs">DOI: <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">{doi}</a></p>)}
     )
 }
