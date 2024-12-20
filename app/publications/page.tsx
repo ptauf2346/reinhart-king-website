@@ -27,13 +27,14 @@ export default async function PublicationsPage(){
 
 
 function Publication({ publication}: any) {
-    const { pmid, title, authors, journal, publication_year } = publication || {};
+    const { pmid, title, authors, journal, publication_year, doi } = publication || {};
 
     return (
             <div className='py-2'>
                 <h1 className="text-sm"><b>{title}</b></h1>
                 <p className="text-xs">{authors}</p>
                 <p className="text-xs"><i>{journal}</i>, {publication_year}, PMID: {pmid}</p>
+                <p className="text-xs">{doi}</p>
             </div>
     )
 }
